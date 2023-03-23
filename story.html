@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generated Stories</title>
+</head>
+<body>
+    <h1>Generated Stories</h1>
+    {% for story in stories %}
+        <p>{{ story }}</p>
+    {% endfor %}
+</body>
+</html>
+
+
+<div class="loader-wrapper">
+    <span class="loader"><span class="loader-inner"></span></span>
+</div>
+
+<script> $(window) .on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+});
+    </script>
